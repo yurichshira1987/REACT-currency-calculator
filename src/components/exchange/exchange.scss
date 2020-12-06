@@ -1,0 +1,25 @@
+.exchange{
+    border: 1px solid black;
+    width: 700px;
+    margin-right: 20px;
+    min-height: 400px;
+}
+.exchangeContent{
+    padding:40px;
+    ul{
+        padding: 0;
+        margin:0;
+        li{
+            list-style: none;
+            border-bottom: 1px solid black;
+            display:flex;
+            justify-content:space-around;
+            margin-top: 10px;
+            
+        }
+        img{
+            width:20px;
+            height:15px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.modalInput{
+    margin:1vw auto;
+    padding:5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    label{
+        font-size: 16px;
+    }
+    input{
+        height:1.3vw;
+    }
+    span{
+        font-size: 14px;
+        color:red;
+    }    
+}
+.inputInvalid{
+    color:red
+}

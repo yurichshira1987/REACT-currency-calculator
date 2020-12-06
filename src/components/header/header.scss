@@ -1,0 +1,22 @@
+.headerWrap{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    a{
+        text-decoration: none;
+    }
+    h2{
+        font-size:1.6vw;
+        color:black;
+    }
+}
+.person{
+    margin-left: 60px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
