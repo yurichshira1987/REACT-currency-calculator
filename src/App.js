@@ -217,28 +217,28 @@ calculatorHandler=async()=>{
     console.log(this.state.result)
 }
 componentDidMount=()=>{
-    fetch(`https://api.exchangeratesapi.io/latest?base=${this.state.base}`)
-    .then((response)=>response.json()).then((response)=>{
-      //console.log(response)
+    // fetch(`https://api.exchangeratesapi.io/latest?base=${this.state.base}`)
+    // .then((response)=>response.json()).then((response)=>{
+    //   //console.log(response)
 
-      const rateArr=['USD','CNY','EUR','GBP','JPY','RUB','CHF']
-      const currency={...this.state.currency}
+    //   const rateArr=['USD','CNY','EUR','GBP','JPY','RUB','CHF']
+    //   const currency={...this.state.currency}
 
-      for(let i=0;i<rateArr.length;i++){
-        currency[rateArr[i]].course=response.rates[rateArr[i]];
-      }
-      this.setState({
-        rate:response.rates,
-        date:response.date,
-        currency:currency
-      })
+    //   for(let i=0;i<rateArr.length;i++){
+    //     currency[rateArr[i]].course=response.rates[rateArr[i]];
+    //   }
+    //   this.setState({
+    //     rate:response.rates,
+    //     date:response.date,
+    //     currency:currency
+    //   })
 
-    })
+    // })
     
-    Axios.get('https://rateapp-d8789.firebaseio.com/sample.json')
-    .then((response)=>{
-      this.setState({sampleList:response.data})
-    })
+    // Axios.get('https://rateapp-d8789.firebaseio.com/sample.json')
+    // .then((response)=>{
+    //   this.setState({sampleList:response.data})
+    // })
   
 }
 
